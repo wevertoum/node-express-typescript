@@ -1,19 +1,11 @@
-import express, { Express, Request, Response } from 'express';
-import bodyParser from 'body-parser';
-import helmet from 'helmet';
-import dotenv from 'dotenv';
 
-dotenv.config();
+import axios from 'axios';
 
-const PORT = process.env.PORT || 3000;
-const app: Express = express();
+const getCoords = async (addressName: string) => {
+  const { data } = await axios.get(
+    `https://nominatim.openstreetmap.org/search?q=${encodeURIComponent(addressName)}&format=json`
+  );
+  return data;
+}
 
-app.use(helmet());
-app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({ extended: true }));
-
-app.get('/', (req: Request, res: Response) => {
-  res.send('<h1>Hello from the TypeScript world!</h1>');
-});
-
-app.listen(PORT, () => console.log(`Running on ${PORT} ⚡`));
+getCoords("Goiânia - Hospital Araújo Jorge").then(console.log);
