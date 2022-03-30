@@ -1,0 +1,96 @@
+[{
+    "day": "Monday",
+    "products": [{
+        "name": "Coffee",
+        "price": 1.00,
+        "quantity": 1
+      },
+      {
+        "name": "Tea",
+        "price": 1.00,
+        "quantity": 3
+      }
+    ]
+  },
+  {
+    "day": "Tuesday",
+    "products": [{
+        "name": "Heineken",
+        "price": 2.00,
+        "quantity": 1
+      },
+      {
+        "name": "Coca-Cola",
+        "price": 1.00,
+        "quantity": 2
+      }
+    ]
+  }, {
+    "day": "Wednesday",
+    "products": [{
+        "name": "Coffee",
+        "price": 1.00,
+        "quantity": 1
+      },
+      {
+        "name": "Tea",
+        "price": 1.00,
+        "quantity": 3
+      }
+    ]
+  },
+  {
+    "day": "Thursday",
+    "products": [{
+        "name": "Heineken",
+        "price": 2.00,
+        "quantity": 1
+      },
+      {
+        "name": "Coca-Cola",
+        "price": 1.00,
+        "quantity": 2
+      }
+    ]
+  }, {
+    "day": "Friday",
+    "products": [{
+        "name": "Coffee",
+        "price": 1.00,
+        "quantity": 1
+      },
+      {
+        "name": "Tea",
+        "price": 1.00,
+        "quantity": 3
+      }
+    ]
+  },
+  {
+    "day": "Saturday",
+    "products": [{
+        "name": "Heineken",
+        "price": 2.00,
+        "quantity": 1
+      },
+      {
+        "name": "Coca-Cola",
+        "price": 1.00,
+        "quantity": 2
+      }
+    ]
+  }, {
+    "day": "Sunday",
+    "products": [{
+        "name": "Coffee",
+        "price": 1.00,
+        "quantity": 1
+      },
+      {
+        "name": "Tea",
+        "price": 1.00,
+        "quantity": 3
+      }
+    ]
+  }
+]
