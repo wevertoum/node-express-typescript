@@ -1,7 +1,11 @@
-import { Models } from "./types/Fruits";
+import { moveTask } from "./moveTask";
+import tasksArr from "./utils/tasksArr";
 
-export const getAllProductsName = (days: Models.DaySale[]) => {
-  return days.flatMap(day => day.products.map(product => product.name));
-}
+const arr = moveTask(
+  "d723f133-dd52-40fe-ba19-c9f7181bef53",
+  "em_andamento",
+  "nenhum",
+  tasksArr
+);
 
-
+console.log("arr move tasks >>>>>>>", arr);
