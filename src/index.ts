@@ -1,4 +1,4 @@
-import { moveTask } from "./moveTask";
+import { moveTask } from "./functions/moveTask";
 import tasksArr from "./utils/tasksArr";
 
 const arr = moveTask(

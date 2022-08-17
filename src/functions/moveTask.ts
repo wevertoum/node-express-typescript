@@ -1,10 +1,10 @@
-import { Task } from "./types/Task";
+import { Task } from "../types/Task";
 
 export const moveTask = (
   taskId: string,
   statusOriginal: Task.Status,
   status: Task.Status,
-  tasks: Task.Model[]
+  tasks: Task.Model[] = []
 ) => {
   const newStatusOriginArr =
     tasks
