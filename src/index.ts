@@ -1,3 +1,7 @@
+// ##### ATENÇÃO #####
+// para rodar o trem: yarn start
+// valeu
+
 import groupCountTasks from "./functions/groupCountTasks";
 import dataProjects from "./mocks/dataProjects";
 
