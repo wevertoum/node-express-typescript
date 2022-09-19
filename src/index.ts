@@ -1,3 +1,5 @@
+import groupCountTasks from "./functions/groupCountTasks";
+import dataProjects from "./mocks/dataProjects";
 
-
-console.log("target >>>>>>>");
+const data = groupCountTasks(dataProjects);
+console.log("data new >>>>", data);
