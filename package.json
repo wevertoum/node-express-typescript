@@ -6,7 +6,7 @@
   "scripts": {
     "build": "rimraf dist && tsc",
     "preserve": "npm run build",
-    "serve": "cross-env NODE_ENV=development concurrently \"tsc --watch\" \"nodemon -q dist/index.js\"",
+    "serve": "nodemon dist/src/index.js",
     "prestart": "npm run build",
     "start": "cross-env NODE_ENV=production node dist/src/index.js",
     "test": "rimraf dist && tsc && ENV_FILE=./config/.env.test jest"
@@ -29,10 +29,11 @@
     "axios": "^0.26.1",
     "body-parser": "^1.19.0",
     "cross-env": "^7.0.3",
-    "dotenv": "^8.2.0",
+    "dotenv": "^16.0.2",
     "express": "^4.17.1",
     "helmet": "^4.4.1",
     "jest": "^27.5.1",
+    "openai": "^3.0.0",
     "rimraf": "^3.0.2",
     "ts-jest": "^27.1.4",
     "ts-node": "^10.9.1",
