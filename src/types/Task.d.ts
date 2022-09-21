@@ -2,13 +2,29 @@ export namespace Task {
   interface Model {
     id: string;
     nome: string;
-    descricao: string;
-    prioridade_estimada: number;
-    ordem: number;
-    qtd_horas: number;
     status: Status;
-    estimativa_inicio?: string;
-    estimativa_fim?: string;
+    prioridade_estimada: number;
+    estimativa_fim: string;
+    descricao: string;
+    encarregado: Encarregado;
+    qtd_horas?: number;
+    codigo: string;
+    tags: Tag[];
+    ordem: number;
+  }
+
+  interface Encarregado {
+    id: string;
+    username: string;
+    email: string;
+    foto_perfil: string;
+    nome_completo: string;
+  }
+
+  interface Tag {
+    id: string;
+    nome: string;
+    cor: string;
   }
 
   type Status =
